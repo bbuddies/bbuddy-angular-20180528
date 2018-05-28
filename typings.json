@@ -1,0 +1,6 @@
+{
+  "name": "bbuddy",
+  "dependencies": {
+    "angular": "registry:dt/angular#1.6.0+20170310065540"
+  }
+}

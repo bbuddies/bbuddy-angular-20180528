@@ -1,0 +1,10 @@
+node_modules
+package.json
+dist
+temp
+coverage
+typings
+bower_modules
+rev
+src/modules/libs
+README.md

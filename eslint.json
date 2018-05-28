@@ -1,0 +1,25 @@
+{
+    "extends": ["eslint:recommended", "angular"],
+    "env": {
+      "browser": true,
+      "node": true,
+      "jquery": true
+    },
+    "globals": {
+      "DragPolar": true,
+      "Howl": true,
+      "arBrowserChecker": true,
+      "enableInlineVideo": true
+    },
+    "rules": {
+      "no-console": 0,
+  
+      "angular/angularelement": false,
+      "angular/timeout-service": false,
+      "angular/interval-service": false,
+      "angular/window-service": false,
+      "angular/document-service": false,
+      "angular/log": false,
+      "angular/controller-name": false
+    }
+  }

@@ -1,18 +1,18 @@
-import {Inject} from '../../common/decorators'
+import { Inject } from "../../common/decorators";
 
-@Inject('api')
+@Inject("api")
 export default class Accounts {
-    constructor(api){
-        this.api = api
+  constructor(api) {
+    this.api = api;
+  }
+  fetchAll(callback) {
+    this.api.accounts.all(callback);
+  }
+  add(account, success, failure) {
+    if (account.name.trim().length == 0) {
+      failure("Account name should not be empty!");
+      return;
     }
-    fetchAll(callback){
-        this.api.accounts.all(callback)
-    }
-    add(account, success, failure){
-        if (account.name.trim().length == 0){
-            failure('Account name should not be empty!')
-            return
-        }
-        this.api.accounts.add(account, success)
-    }
+    this.api.accounts.add(account, success);
+  }
 }
