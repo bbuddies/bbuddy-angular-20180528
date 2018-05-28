@@ -28,4 +28,12 @@ describe('accounts add controller', function() {
         add.should.have.been.calledWith({name: '', balance: 0})
         controller.message.should.eql('Error')
     })
+
+    it('get correct format of current system time string', function(){
+      controller.getDate = function () {
+        return new Date('2014-05-21T12:15:51.234Z')
+      }
+
+      controller.getNowString().should.equal('2014/05/21 20:15:51.234')
+    })
 })
