@@ -10,8 +10,8 @@ export default class Budget {
       failure("Budget month should not be empty!");
       return;
     }
-    if (!isFinite(budget.amount) || budget.amount <= 0) {
-      failure("Budget amount should not be empty!");
+    if (!isFinite(budget.amount) || budget.amount <= 0 || budget.month.trim().length === 0) {
+      failure("Budget amount should not be empty , 0 or invalid!");
       return;
     }
     this.api.budget.add(budget, success);
