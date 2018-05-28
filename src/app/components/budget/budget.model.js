@@ -10,7 +10,7 @@ export default class Budget {
       failure("Budget month should not be empty!");
       return;
     }
-    if (!isFinite(budget.amount) || budget.amount === 0) {
+    if (!isFinite(budget.amount) || budget.amount <= 0) {
       failure("Budget amount should not be empty!");
       return;
     }

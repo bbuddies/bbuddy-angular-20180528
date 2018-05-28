@@ -46,4 +46,32 @@ describe("budget add controller", function() {
 
     result.should.eql(`${YYYY}/${MM}/${DD} ${HH}:${mm}:${ss}:${SSS}`);
   });
+
+  it("add a budget successfully", function() {
+    controller.add();
+
+    add.should.have.been.calledWith({ month: "2018-5", amount: 100000 });
+  });
+
+  it("add a budget failed due to invalid month", function() {
+    add.callsArgWith(2, "Error");
+    controller.budget.month = "";
+    controller.budget.amount = 100000;
+
+    controller.add();
+
+    add.should.have.been.calledWith({ month: "", amount: 100000 });
+    controller.message.should.eql("Error");
+  });
+
+  it("add a budget failed due to invalid amount", function() {
+    add.callsArgWith(2, "Error");
+    controller.budget.month = "2018-5";
+    controller.budget.amount = -5000;
+
+    controller.add();
+
+    add.should.have.been.calledWith({ month: "2018-5", amount: -5000 });
+    controller.message.should.eql("Error");
+  });
 });
