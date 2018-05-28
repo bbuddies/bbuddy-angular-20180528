@@ -4,9 +4,9 @@ import { Inject } from "../../common/decorators";
 
 @Inject("budgetModel", "$state")
 export default class BudgetAddController {
-  constructor(budget, $state) {
+  constructor(budgets, $state) {
     const currentTime = new Date();
-    this.budget = budget;
+    this.budgets = budgets;
     this.$state = $state;
     this.budget = {
       time: `${currentTime.getFullYear()}-${currentTime.getMonth()}`,
@@ -15,9 +15,7 @@ export default class BudgetAddController {
     this.message = "";
   }
   add() {
-    alert(angular.toJson(this.budget));
-    // this.accounts.add(this.account,
-    //     () => this.$state.go('app.accounts'),
-    //     (message) => this.message = message )
+    // alert(angular.toJson(this.budget));
+    this.budgets.add(this.budget, (resolve) => (this.message = resolve), (err) => (this.message = err));
   }
 }

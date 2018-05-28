@@ -3914,6 +3914,10 @@ mocha@^3.0.0, mocha@^3.2.0:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
+moment@^2.22.1:
+  version "2.22.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
+
 morgan@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.0.0.tgz#83cf74b9f2d841901f1a9a6b8fa7a468d2e47a8d"
@@ -3978,6 +3982,10 @@ negotiator@0.4.2:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng-flat-datepicker@^0.1.4:
+  version "0.1.4"
+  resolved "http://registry.npm.taobao.org/ng-flat-datepicker/download/ng-flat-datepicker-0.1.4.tgz#1f9d28121e8f8e1fbb66b51f25b55f5361699eb1"
 
 ng-token-auth@^0.0.29:
   version "0.0.29"

@@ -4,7 +4,7 @@
     "**/.git": true,
     ".vscode": true,
     "**/.DS_Store": true,
-    "node_modules": true,
+    // "node_modules": true,
     "bower_modules": true,
     "typings": true,
     "rev": true,

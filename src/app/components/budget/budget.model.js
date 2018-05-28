@@ -10,7 +10,7 @@ export default class Budget {
       failure("Budget time should not be empty!");
       return;
     }
-    if (budget.ammount.trim().length === 0) {
+    if (!isFinite(budget.amount) || budget.amount === 0) {
       failure("Budget amount should not be empty!");
       return;
     }
