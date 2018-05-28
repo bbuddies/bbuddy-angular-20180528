@@ -9,7 +9,7 @@ export default class BudgetAddController {
     this.budgets = budgets;
     this.$state = $state;
     this.budget = {
-      time: `${currentTime.getFullYear()}-${currentTime.getMonth()}`,
+      time: `${currentTime.getFullYear()}-${currentTime.getMonth()+1}`,
       amount: 1000
     };
     this.message = "";
