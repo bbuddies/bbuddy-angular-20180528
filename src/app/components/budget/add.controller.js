@@ -1,5 +1,6 @@
 /// <reference path="../../../../typings/index.d.ts" />
-import angular from "angular";
+var moment = require("moment");
+
 import { Inject } from "../../common/decorators";
 
 @Inject("budgetModel", "$state")
@@ -14,8 +15,12 @@ export default class BudgetAddController {
     };
     this.message = "";
   }
+
+  getNowString() {
+    return moment().format("YYYY/MM/DD HH:mm:ss:SSS");
+  }
+
   add() {
-    // alert(angular.toJson(this.budget));
     this.budgets.add(this.budget, (resolve) => (this.message = resolve), (err) => (this.message = err));
   }
 }
