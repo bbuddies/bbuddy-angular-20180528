@@ -6,8 +6,8 @@ export default class Budget {
     this.api = api;
   }
   add(budget, success, failure) {
-    if (budget.time.trim().length === 0) {
-      failure("Budget time should not be empty!");
+    if (budget.month.trim().length === 0) {
+      failure("Budget month should not be empty!");
       return;
     }
     if (!isFinite(budget.amount) || budget.amount === 0) {
