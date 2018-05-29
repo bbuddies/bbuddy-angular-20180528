@@ -8,9 +8,9 @@ export default class BudgetGetController {
     this.$state = $state;
     this.budget = {
       start: `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()}`,
-      end: `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()}`,
-      sum: void 0
+      end: `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()}`
     };
+    this.sum = void 0;
     this.message = "";
   }
 
@@ -22,7 +22,7 @@ export default class BudgetGetController {
     this.budgets.get(
       this.budget,
       (result) => {
-        this.budget.sum = result;
+        this.sum = result;
       },
       (err) => (this.message = err)
     );
