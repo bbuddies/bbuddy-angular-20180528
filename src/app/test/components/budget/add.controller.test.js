@@ -3,6 +3,16 @@ import Controller from "../../../components/budget/add.controller";
 describe("budget add controller", function() {
   var savedDate = Date;
   var budget, $state, add, go, controller;
+  var givenBudget = function(month, amount) {
+    controller.budget = {
+      month,
+      amount
+    };
+  };
+  var failedWithError = function(err) {
+    add.callsArgWith(2, err);
+  };
+
   beforeEach(() => {
     budget = { add: () => {} };
     add = sinon.stub(budget, "add").yields();
@@ -10,8 +20,6 @@ describe("budget add controller", function() {
     go = sinon.spy($state, "go");
 
     controller = new Controller(budget, $state);
-    controller.budget.month = "2018-5";
-    controller.budget.amount = 100000;
   });
   afterEach(() => {
     Date = savedDate;
@@ -48,30 +56,18 @@ describe("budget add controller", function() {
   });
 
   it("add a budget successfully", function() {
+    givenBudget("2018-5", 100000);
+
     controller.add();
 
     add.should.have.been.calledWith({ month: "2018-5", amount: 100000 });
   });
 
-  it("add a budget failed due to invalid month", function() {
-    add.callsArgWith(2, "Error");
-    controller.budget.month = "";
-    controller.budget.amount = 100000;
+  it("add a budget failed due any reason", function() {
+    failedWithError("Error");
 
     controller.add();
 
-    add.should.have.been.calledWith({ month: "", amount: 100000 });
-    controller.message.should.eql("Error");
-  });
-
-  it("add a budget failed due to invalid amount", function() {
-    add.callsArgWith(2, "Error");
-    controller.budget.month = "2018-5";
-    controller.budget.amount = -5000;
-
-    controller.add();
-
-    add.should.have.been.calledWith({ month: "2018-5", amount: -5000 });
     controller.message.should.eql("Error");
   });
 });
