@@ -29,7 +29,7 @@ export default class Budget {
       failure("Budget start or end date should not be empty!");
       return;
     }
-    if (moment.duration(end.diff(start)).as("days")) {
+    if (moment.duration(end.diff(start)).as("days") < 0) {
       failure("Budget end date should not later than start date!");
       return;
     }
