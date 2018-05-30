@@ -30,6 +30,7 @@ export default class GrammarModuleAddController {
     self.summaryBudget = 0;
     self.grammarModuleModel.fetchAll(function (beData) {
       console.log(beData);
+
       var summaryBudget = 0;
       var yearIdx = 0;
       var _startYear = parseInt(self.date.startDate.year);
@@ -76,14 +77,14 @@ export default class GrammarModuleAddController {
     });
   }
 
-  calculate(year, startMonth, endMonth, startDay, endDay, beData) {
+  calculate(currentYear, startMonth, endMonth, startDay, endDay, beData) {
     var self = this;
-    var monthIdx = 0;
     var summaryBudget = 0;
+    var monthIdx = 0;
     var gapMonth = endMonth - startMonth;
 
     while (monthIdx <= gapMonth) {
-      let dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(year, startMonth + monthIdx);
+      let dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(currentYear, startMonth + monthIdx);
       let gapDay = 0;
       if (gapMonth == 0) {
         gapDay = endDay - startDay + 1;
@@ -97,9 +98,9 @@ export default class GrammarModuleAddController {
 
       for (let dataIdx = 0; dataIdx < beData.length; dataIdx++) {
         let dataItem = beData[dataIdx];
-        // console.log('date: ' + (year + '-' + (startMonth + monthIdx)))
+        // console.log('date: ' + (currentYear + '-' + (startMonth + monthIdx)))
 
-        if (dataItem.month == (year + '-' + (startMonth + monthIdx))) {
+        if (dataItem.month == (currentYear + '-' + (startMonth + monthIdx))) {
           summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
           break;
         }
