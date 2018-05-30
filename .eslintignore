@@ -1,0 +1,14 @@
+gulp
+dist
+**/.git
+.vscode
+**/.DS_Store
+node_modules
+bower_modules
+typings
+rev
+temp
+dist
+gulpfile.js
+# test case
+test

@@ -1,4 +1,3 @@
-http.$inject = ['$httpProvider'];
+http.$inject = ["$httpProvider"];
 
-export default function http($httpProvider) {
-}
+export default function http(/* $httpProvider */) {}

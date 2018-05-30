@@ -240,13 +240,15 @@
     "babel-helper-builder-binary-assignment-operator-visitor": {
       "version": "6.22.0",
       "from": "babel-helper-builder-binary-assignment-operator-visitor@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-builder-binary-assignment-operator-visitor/download/babel-helper-builder-binary-assignment-operator-visitor-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-builder-binary-assignment-operator-visitor/download/babel-helper-builder-binary-assignment-operator-visitor-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-call-delegate": {
       "version": "6.22.0",
       "from": "babel-helper-call-delegate@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-call-delegate/download/babel-helper-call-delegate-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-call-delegate/download/babel-helper-call-delegate-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-define-map": {
@@ -266,31 +268,36 @@
     "babel-helper-explode-assignable-expression": {
       "version": "6.22.0",
       "from": "babel-helper-explode-assignable-expression@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-explode-assignable-expression/download/babel-helper-explode-assignable-expression-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-explode-assignable-expression/download/babel-helper-explode-assignable-expression-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-function-name": {
       "version": "6.22.0",
       "from": "babel-helper-function-name@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-function-name/download/babel-helper-function-name-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-function-name/download/babel-helper-function-name-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-get-function-arity": {
       "version": "6.22.0",
       "from": "babel-helper-get-function-arity@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-get-function-arity/download/babel-helper-get-function-arity-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-get-function-arity/download/babel-helper-get-function-arity-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-hoist-variables": {
       "version": "6.22.0",
       "from": "babel-helper-hoist-variables@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-hoist-variables/download/babel-helper-hoist-variables-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-hoist-variables/download/babel-helper-hoist-variables-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-optimise-call-expression": {
       "version": "6.22.0",
       "from": "babel-helper-optimise-call-expression@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-optimise-call-expression/download/babel-helper-optimise-call-expression-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-optimise-call-expression/download/babel-helper-optimise-call-expression-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-regex": {
@@ -310,13 +317,15 @@
     "babel-helper-remap-async-to-generator": {
       "version": "6.22.0",
       "from": "babel-helper-remap-async-to-generator@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-remap-async-to-generator/download/babel-helper-remap-async-to-generator-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-remap-async-to-generator/download/babel-helper-remap-async-to-generator-6.22.0.tgz",
       "dev": true
     },
     "babel-helper-replace-supers": {
       "version": "6.22.0",
       "from": "babel-helper-replace-supers@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-helper-replace-supers/download/babel-helper-replace-supers-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-helper-replace-supers/download/babel-helper-replace-supers-6.22.0.tgz",
       "dev": true
     },
     "babel-helpers": {
@@ -340,61 +349,71 @@
     "babel-plugin-check-es2015-constants": {
       "version": "6.22.0",
       "from": "babel-plugin-check-es2015-constants@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-check-es2015-constants/download/babel-plugin-check-es2015-constants-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-check-es2015-constants/download/babel-plugin-check-es2015-constants-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-syntax-async-functions": {
       "version": "6.13.0",
       "from": "babel-plugin-syntax-async-functions@>=6.8.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-syntax-async-functions/download/babel-plugin-syntax-async-functions-6.13.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-syntax-async-functions/download/babel-plugin-syntax-async-functions-6.13.0.tgz",
       "dev": true
     },
     "babel-plugin-syntax-decorators": {
       "version": "6.13.0",
       "from": "babel-plugin-syntax-decorators@>=6.1.18 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-syntax-decorators/download/babel-plugin-syntax-decorators-6.13.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-syntax-decorators/download/babel-plugin-syntax-decorators-6.13.0.tgz",
       "dev": true
     },
     "babel-plugin-syntax-exponentiation-operator": {
       "version": "6.13.0",
       "from": "babel-plugin-syntax-exponentiation-operator@>=6.8.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-syntax-exponentiation-operator/download/babel-plugin-syntax-exponentiation-operator-6.13.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-syntax-exponentiation-operator/download/babel-plugin-syntax-exponentiation-operator-6.13.0.tgz",
       "dev": true
     },
     "babel-plugin-syntax-trailing-function-commas": {
       "version": "6.22.0",
       "from": "babel-plugin-syntax-trailing-function-commas@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-syntax-trailing-function-commas/download/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-syntax-trailing-function-commas/download/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-async-to-generator": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-async-to-generator@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-async-to-generator/download/babel-plugin-transform-async-to-generator-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-async-to-generator/download/babel-plugin-transform-async-to-generator-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-decorators-legacy": {
       "version": "1.3.4",
       "from": "babel-plugin-transform-decorators-legacy@>=1.3.4 <2.0.0",
-      "resolved": "https://registry.npmjs.org/babel-plugin-transform-decorators-legacy/-/babel-plugin-transform-decorators-legacy-1.3.4.tgz",
+      "resolved":
+        "https://registry.npmjs.org/babel-plugin-transform-decorators-legacy/-/babel-plugin-transform-decorators-legacy-1.3.4.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-arrow-functions": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-arrow-functions@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-arrow-functions/download/babel-plugin-transform-es2015-arrow-functions-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-arrow-functions/download/babel-plugin-transform-es2015-arrow-functions-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-block-scoped-functions": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-block-scoped-functions@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoped-functions/download/babel-plugin-transform-es2015-block-scoped-functions-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoped-functions/download/babel-plugin-transform-es2015-block-scoped-functions-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-block-scoping": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-block-scoping@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoping/download/babel-plugin-transform-es2015-block-scoping-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoping/download/babel-plugin-transform-es2015-block-scoping-6.22.0.tgz",
       "dev": true,
       "dependencies": {
         "lodash": {
@@ -408,133 +427,155 @@
     "babel-plugin-transform-es2015-classes": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-classes@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-classes/download/babel-plugin-transform-es2015-classes-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-classes/download/babel-plugin-transform-es2015-classes-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-computed-properties": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-computed-properties@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-computed-properties/download/babel-plugin-transform-es2015-computed-properties-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-computed-properties/download/babel-plugin-transform-es2015-computed-properties-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-destructuring": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-destructuring@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-destructuring/download/babel-plugin-transform-es2015-destructuring-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-destructuring/download/babel-plugin-transform-es2015-destructuring-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-duplicate-keys": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-duplicate-keys@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-duplicate-keys/download/babel-plugin-transform-es2015-duplicate-keys-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-duplicate-keys/download/babel-plugin-transform-es2015-duplicate-keys-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-for-of": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-for-of@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-for-of/download/babel-plugin-transform-es2015-for-of-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-for-of/download/babel-plugin-transform-es2015-for-of-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-function-name": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-function-name@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-function-name/download/babel-plugin-transform-es2015-function-name-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-function-name/download/babel-plugin-transform-es2015-function-name-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-literals": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-literals@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-literals/download/babel-plugin-transform-es2015-literals-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-literals/download/babel-plugin-transform-es2015-literals-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-modules-amd": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-modules-amd@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-amd/download/babel-plugin-transform-es2015-modules-amd-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-amd/download/babel-plugin-transform-es2015-modules-amd-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-modules-commonjs": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-modules-commonjs@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-modules-systemjs": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-modules-systemjs@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-systemjs/download/babel-plugin-transform-es2015-modules-systemjs-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-systemjs/download/babel-plugin-transform-es2015-modules-systemjs-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-modules-umd": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-modules-umd@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-umd/download/babel-plugin-transform-es2015-modules-umd-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-umd/download/babel-plugin-transform-es2015-modules-umd-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-object-super": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-object-super@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-object-super/download/babel-plugin-transform-es2015-object-super-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-object-super/download/babel-plugin-transform-es2015-object-super-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-parameters": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-parameters@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-parameters/download/babel-plugin-transform-es2015-parameters-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-parameters/download/babel-plugin-transform-es2015-parameters-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-shorthand-properties": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-shorthand-properties@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-shorthand-properties/download/babel-plugin-transform-es2015-shorthand-properties-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-shorthand-properties/download/babel-plugin-transform-es2015-shorthand-properties-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-spread": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-spread@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-spread/download/babel-plugin-transform-es2015-spread-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-spread/download/babel-plugin-transform-es2015-spread-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-sticky-regex": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-sticky-regex@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-sticky-regex/download/babel-plugin-transform-es2015-sticky-regex-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-sticky-regex/download/babel-plugin-transform-es2015-sticky-regex-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-template-literals": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-template-literals@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-template-literals/download/babel-plugin-transform-es2015-template-literals-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-template-literals/download/babel-plugin-transform-es2015-template-literals-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-typeof-symbol": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-typeof-symbol@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-typeof-symbol/download/babel-plugin-transform-es2015-typeof-symbol-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-typeof-symbol/download/babel-plugin-transform-es2015-typeof-symbol-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-es2015-unicode-regex": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-es2015-unicode-regex@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-es2015-unicode-regex/download/babel-plugin-transform-es2015-unicode-regex-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-es2015-unicode-regex/download/babel-plugin-transform-es2015-unicode-regex-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-exponentiation-operator": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-exponentiation-operator@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-exponentiation-operator/download/babel-plugin-transform-exponentiation-operator-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-exponentiation-operator/download/babel-plugin-transform-exponentiation-operator-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-regenerator": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-regenerator@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-regenerator/download/babel-plugin-transform-regenerator-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-regenerator/download/babel-plugin-transform-regenerator-6.22.0.tgz",
       "dev": true
     },
     "babel-plugin-transform-strict-mode": {
       "version": "6.22.0",
       "from": "babel-plugin-transform-strict-mode@>=6.22.0 <7.0.0",
-      "resolved": "https://registry.npm.taobao.org/babel-plugin-transform-strict-mode/download/babel-plugin-transform-strict-mode-6.22.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/babel-plugin-transform-strict-mode/download/babel-plugin-transform-strict-mode-6.22.0.tgz",
       "dev": true
     },
     "babel-polyfill": {
@@ -1097,7 +1138,8 @@
     "connect-history-api-fallback": {
       "version": "1.3.0",
       "from": "connect-history-api-fallback@>=1.3.0 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/connect-history-api-fallback/download/connect-history-api-fallback-1.3.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/connect-history-api-fallback/download/connect-history-api-fallback-1.3.0.tgz",
       "dev": true
     },
     "connect-timeout": {
@@ -1627,7 +1669,8 @@
     "extract-text-webpack-plugin": {
       "version": "1.0.1",
       "from": "extract-text-webpack-plugin@>=1.0.1 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/extract-text-webpack-plugin/download/extract-text-webpack-plugin-1.0.1.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/extract-text-webpack-plugin/download/extract-text-webpack-plugin-1.0.1.tgz",
       "dev": true
     },
     "fancy-log": {
@@ -3591,7 +3634,8 @@
     "math-expression-evaluator": {
       "version": "1.2.14",
       "from": "math-expression-evaluator@>=1.2.14 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/math-expression-evaluator/download/math-expression-evaluator-1.2.14.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/math-expression-evaluator/download/math-expression-evaluator-1.2.14.tgz",
       "dev": true
     },
     "media-typer": {
@@ -4178,13 +4222,15 @@
     "postcss-discard-comments": {
       "version": "2.0.4",
       "from": "postcss-discard-comments@>=2.0.4 <3.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-discard-comments/download/postcss-discard-comments-2.0.4.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-discard-comments/download/postcss-discard-comments-2.0.4.tgz",
       "dev": true
     },
     "postcss-discard-duplicates": {
       "version": "2.0.2",
       "from": "postcss-discard-duplicates@>=2.0.1 <3.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-discard-duplicates/download/postcss-discard-duplicates-2.0.2.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-discard-duplicates/download/postcss-discard-duplicates-2.0.2.tgz",
       "dev": true
     },
     "postcss-discard-empty": {
@@ -4262,13 +4308,15 @@
     "postcss-minify-font-values": {
       "version": "1.0.5",
       "from": "postcss-minify-font-values@>=1.0.2 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-minify-font-values/download/postcss-minify-font-values-1.0.5.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-minify-font-values/download/postcss-minify-font-values-1.0.5.tgz",
       "dev": true
     },
     "postcss-minify-gradients": {
       "version": "1.0.5",
       "from": "postcss-minify-gradients@>=1.0.1 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-minify-gradients/download/postcss-minify-gradients-1.0.5.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-minify-gradients/download/postcss-minify-gradients-1.0.5.tgz",
       "dev": true
     },
     "postcss-minify-params": {
@@ -4280,25 +4328,29 @@
     "postcss-minify-selectors": {
       "version": "2.1.1",
       "from": "postcss-minify-selectors@>=2.0.4 <3.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-minify-selectors/download/postcss-minify-selectors-2.1.1.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-minify-selectors/download/postcss-minify-selectors-2.1.1.tgz",
       "dev": true
     },
     "postcss-modules-extract-imports": {
       "version": "1.0.1",
       "from": "postcss-modules-extract-imports@>=1.0.0 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-modules-extract-imports/download/postcss-modules-extract-imports-1.0.1.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-modules-extract-imports/download/postcss-modules-extract-imports-1.0.1.tgz",
       "dev": true
     },
     "postcss-modules-local-by-default": {
       "version": "1.1.1",
       "from": "postcss-modules-local-by-default@>=1.0.1 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-modules-local-by-default/download/postcss-modules-local-by-default-1.1.1.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-modules-local-by-default/download/postcss-modules-local-by-default-1.1.1.tgz",
       "dev": true,
       "dependencies": {
         "css-selector-tokenizer": {
           "version": "0.6.0",
           "from": "css-selector-tokenizer@>=0.6.0 <0.7.0",
-          "resolved": "https://registry.npm.taobao.org/css-selector-tokenizer/download/css-selector-tokenizer-0.6.0.tgz",
+          "resolved":
+            "https://registry.npm.taobao.org/css-selector-tokenizer/download/css-selector-tokenizer-0.6.0.tgz",
           "dev": true
         },
         "regexpu-core": {
@@ -4318,7 +4370,8 @@
         "css-selector-tokenizer": {
           "version": "0.6.0",
           "from": "css-selector-tokenizer@>=0.6.0 <0.7.0",
-          "resolved": "https://registry.npm.taobao.org/css-selector-tokenizer/download/css-selector-tokenizer-0.6.0.tgz",
+          "resolved":
+            "https://registry.npm.taobao.org/css-selector-tokenizer/download/css-selector-tokenizer-0.6.0.tgz",
           "dev": true
         },
         "regexpu-core": {
@@ -4338,7 +4391,8 @@
     "postcss-normalize-charset": {
       "version": "1.1.1",
       "from": "postcss-normalize-charset@>=1.1.0 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-normalize-charset/download/postcss-normalize-charset-1.1.1.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-normalize-charset/download/postcss-normalize-charset-1.1.1.tgz",
       "dev": true
     },
     "postcss-normalize-url": {
@@ -4368,7 +4422,8 @@
     "postcss-reduce-transforms": {
       "version": "1.0.4",
       "from": "postcss-reduce-transforms@>=1.0.3 <2.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-reduce-transforms/download/postcss-reduce-transforms-1.0.4.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-reduce-transforms/download/postcss-reduce-transforms-1.0.4.tgz",
       "dev": true
     },
     "postcss-selector-parser": {
@@ -4386,7 +4441,8 @@
     "postcss-unique-selectors": {
       "version": "2.0.2",
       "from": "postcss-unique-selectors@>=2.0.2 <3.0.0",
-      "resolved": "https://registry.npm.taobao.org/postcss-unique-selectors/download/postcss-unique-selectors-2.0.2.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/postcss-unique-selectors/download/postcss-unique-selectors-2.0.2.tgz",
       "dev": true
     },
     "postcss-value-parser": {
@@ -5014,7 +5070,8 @@
     "string.prototype.codepointat": {
       "version": "0.2.0",
       "from": "string.prototype.codepointat@>=0.2.0 <0.3.0",
-      "resolved": "https://registry.npm.taobao.org/string.prototype.codepointat/download/string.prototype.codepointat-0.2.0.tgz",
+      "resolved":
+        "https://registry.npm.taobao.org/string.prototype.codepointat/download/string.prototype.codepointat-0.2.0.tgz",
       "dev": true
     },
     "strip-ansi": {

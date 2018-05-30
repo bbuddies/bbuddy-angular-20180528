@@ -34,5 +34,6 @@
   "html.format.endWithNewline": true,
   "path-intellisense.mappings": {
     "images": "${workspaceRoot}/src/images"
-  }
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true
 }

@@ -1,14 +1,14 @@
-import {Inject} from '../decorators'
+import { Inject } from "../decorators";
 
-@Inject('http')
+@Inject("http")
 export default class Accounts {
-    constructor(http){
-        this.http = http
-    }
-    all(callback){
-        this.http.get("accounts", callback)
-    }
-    add(account, callback){
-        this.http.post("accounts", account, callback)
-    }
+  constructor(http) {
+    this.http = http;
+  }
+  all(callback) {
+    this.http.get("accounts", callback);
+  }
+  add(account, callback) {
+    this.http.post("accounts", account, callback);
+  }
 }
