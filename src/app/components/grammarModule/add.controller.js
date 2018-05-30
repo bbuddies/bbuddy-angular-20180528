@@ -12,14 +12,14 @@ export default class GrammarModuleAddController {
     this.$state = $state
     this.date = {
       startDate: {
-        year: 2018,
+        year: 2017,
         month: 2,
         day: 15
       },
       endDate: {
-        year: 2018,
-        month: 4,
-        day: 15
+        year: 2017,
+        month: 12,
+        day: 31
       }
     };
     this.summaryBudget = 0;
@@ -28,70 +28,144 @@ export default class GrammarModuleAddController {
   getData() {
     var self = this;
     self.summaryBudget = 0;
-    self.grammarModuleModel.fetchAll(function (data) {
-      console.log(data);
-      let gapYears = self.date.endDate.year - self.date.startDate.year;
+    self.grammarModuleModel.fetchAll(function (beData) {
+      console.log(beData);
       var summaryBudget = 0;
+      var yearIdx = 0;
+      var _startYear = parseInt(self.date.startDate.year);
+      var _endYear = parseInt(self.date.endDate.year);
+      var _startMonth = parseInt(self.date.startDate.month);
+      var _endMonth = parseInt(self.date.endDate.month);
+      var _startDay = parseInt(self.date.startDate.day);
+      var _endDay = parseInt(self.date.endDate.day);
+      var gapYears = _endYear - _startYear;
 
-      if (gapYears == 0) {
-        let gapMonth = self.date.endDate.month - self.date.startDate.month;
+      while (yearIdx <= gapYears) {
+        var startMonth = 0;
+        var endMonth = 0;
+        var startDay = 0;
+        var endDay = 0;
 
-        if (gapMonth == 0) {
-          let gapDay = self.date.endDate.day - self.date.startDate.day;
-          let dataMonth = `${self.date.endDate.year}-${self.date.endDate.month}`
-          console.log('dataMonth: ' + dataMonth);
-          console.log('gapDay: ' + (gapDay + 1));
-
-          for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
-            let dataItem = data[dataIdx]
-
-            if (dataItem.month == dataMonth) {
-              let dayLengthOfMonth = self.getDayLengthOfMonth(self.date.endDate.year, self.date.endDate.month);
-              let budget = ((gapDay + 1) / dayLengthOfMonth) * dataItem.amount;
-              summaryBudget += budget;
-            }
-          }
+        if (gapYears == 0) {
+          startMonth = _startMonth;
+          endMonth = _endMonth;
+          startDay = _startDay;
+          endDay = _endDay;
+        } else if (yearIdx == 0) {
+          startMonth = _startMonth;
+          endMonth = 12;
+          startDay = _startDay;
+          endDay = 31;
+        } else if (yearIdx == gapYears) {
+          startMonth = 1;
+          endMonth = _endMonth;
+          startDay = 1;
+          endDay = _endDay;
         } else {
-          var tempMonthValue = 0;
-          while (tempMonthValue <= gapMonth) {
-            let dayLengthOfMonth = self.getDayLengthOfMonth(self.date.endDate.year, self.date.startDate.month + tempMonthValue);
-            let gapDay = 0;
-            if (tempMonthValue == 0) {
-              gapDay = dayLengthOfMonth - self.date.startDate.day + 1;
-            } else if (tempMonthValue == gapMonth) {
-              gapDay = self.date.endDate.day;
-            } else {
-              gapDay = dayLengthOfMonth;
-            }
-            let dataMonth = `${self.date.endDate.year}-${self.date.startDate.month + tempMonthValue}`
-            console.log('dataMonth: ' + dataMonth);
-            console.log('gapDay: ' + gapDay);
-
-            for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
-              let dataItem = data[dataIdx]
-
-              if (dataItem.month == dataMonth) {
-                let budget = (gapDay / dayLengthOfMonth) * dataItem.amount;
-                summaryBudget += budget;
-              }
-            }
-
-            tempMonthValue++;
-          }
+          startMonth = 1;
+          endMonth = 12;
+          startDay = 1;
+          endDay = 31;
         }
-      } else {
-        //
+
+        summaryBudget += self.calculate(_startYear + yearIdx, startMonth, endMonth, startDay, endDay, beData);
+        yearIdx++;
       }
+
+      // if (gapYears == 0) {
+      //   let gapMonth = self.date.endDate.month - self.date.startDate.month;
+      //
+      //   if (gapMonth == 0) {
+      //     let gapDay = self.date.endDate.day - self.date.startDate.day;
+      //     let dataMonth = `${self.date.endDate.year}-${self.date.endDate.month}`
+      //     console.log('dataMonth: ' + dataMonth);
+      //     console.log('gapDay: ' + (gapDay + 1));
+      //
+      //     for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
+      //       let dataItem = data[dataIdx]
+      //
+      //       if (dataItem.month == dataMonth) {
+      //         let dayLengthOfMonth = self.getDayNumOfCurrentMonth(self.date.endDate.year, self.date.endDate.month);
+      //         let budget = ((gapDay + 1) / dayLengthOfMonth) * dataItem.amount;
+      //         summaryBudget += budget;
+      //       }
+      //     }
+      //   } else {
+      //     var tempMonthValue = 0;
+      //     while (tempMonthValue <= gapMonth) {
+      //       let dayLengthOfMonth = self.getDayNumOfCurrentMonth(self.date.endDate.year, self.date.startDate.month + tempMonthValue);
+      //       let gapDay = 0;
+      //       if (tempMonthValue == 0) {
+      //         gapDay = dayLengthOfMonth - self.date.startDate.day + 1;
+      //       } else if (tempMonthValue == gapMonth) {
+      //         gapDay = self.date.endDate.day;
+      //       } else {
+      //         gapDay = dayLengthOfMonth;
+      //       }
+      //       let dataMonth = `${self.date.endDate.year}-${self.date.startDate.month + tempMonthValue}`
+      //       console.log('dataMonth: ' + dataMonth);
+      //       console.log('gapDay: ' + gapDay);
+      //
+      //       for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
+      //         let dataItem = data[dataIdx]
+      //
+      //         if (dataItem.month == dataMonth) {
+      //           let budget = (gapDay / dayLengthOfMonth) * dataItem.amount;
+      //           summaryBudget += budget;
+      //         }
+      //       }
+      //
+      //       tempMonthValue++;
+      //     }
+      //   }
+      // } else {
+      //   //
+      // }
 
       self.summaryBudget = summaryBudget;
     });
+  }
+
+  calculate(year, startMonth, endMonth, startDay, endDay, beData) {
+    var self = this;
+    var monthIdx = 0;
+    var summaryBudget = 0;
+    var gapMonth = endMonth - startMonth;
+
+    while (monthIdx <= gapMonth) {
+      let dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(year, startMonth + monthIdx);
+      let gapDay = 0;
+      if (gapMonth == 0) {
+        gapDay = endDay - startDay + 1;
+      } else if (monthIdx == 0) {
+        gapDay = dayNumOfCurrentMonth - startDay + 1;
+      } else if (monthIdx == gapMonth) {
+        gapDay = endDay;
+      } else {
+        gapDay = dayNumOfCurrentMonth;
+      }
+
+      for (let dataIdx = 0; dataIdx < beData.length; dataIdx++) {
+        let dataItem = beData[dataIdx];
+        console.log('date: ' + (year + '-' + (startMonth + monthIdx)))
+
+        if (dataItem.month == (year + '-' + (startMonth + monthIdx))) {
+          summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
+          break;
+        }
+      }
+
+      monthIdx++;
+    }
+
+    return summaryBudget;
   }
 
   isLeapYear(year) {
     return ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
   }
 
-  getDayLengthOfMonth(yearValue, monthValue) {
+  getDayNumOfCurrentMonth(yearValue, monthValue) {
     var self = this,
       year = parseInt(yearValue),
       month = parseInt(monthValue),

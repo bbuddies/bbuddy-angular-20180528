@@ -1,5 +1,7 @@
 <div>
   <div>search data</div>
+  <div>总价:</div>
+  <div style="color: red;" ng-bind="$ctrl.summaryBudget"></div>
   <div>
     <div>开始时间</div>
     年<input name="start-year" value="" ng-model="$ctrl.date.startDate.year">
@@ -11,8 +13,7 @@
     日<input name="end-day" value="" ng-model="$ctrl.date.endDate.day">
     <div style="width: 300px; margin: 10px 0;"
          class="btn btn-lg btn-primary btn-block"
-         ng-click="$ctrl.getData()">Submit</div>
+         ng-click="$ctrl.getData()">Submit
+    </div>
   </div>
-  <div>总价:</div>
-  <div style="color: red;" ng-bind="$ctrl.summaryBudget"></div>
 </div>
