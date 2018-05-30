@@ -72,56 +72,6 @@ export default class GrammarModuleAddController {
         yearIdx++;
       }
 
-      // if (gapYears == 0) {
-      //   let gapMonth = self.date.endDate.month - self.date.startDate.month;
-      //
-      //   if (gapMonth == 0) {
-      //     let gapDay = self.date.endDate.day - self.date.startDate.day;
-      //     let dataMonth = `${self.date.endDate.year}-${self.date.endDate.month}`
-      //     console.log('dataMonth: ' + dataMonth);
-      //     console.log('gapDay: ' + (gapDay + 1));
-      //
-      //     for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
-      //       let dataItem = data[dataIdx]
-      //
-      //       if (dataItem.month == dataMonth) {
-      //         let dayLengthOfMonth = self.getDayNumOfCurrentMonth(self.date.endDate.year, self.date.endDate.month);
-      //         let budget = ((gapDay + 1) / dayLengthOfMonth) * dataItem.amount;
-      //         summaryBudget += budget;
-      //       }
-      //     }
-      //   } else {
-      //     var tempMonthValue = 0;
-      //     while (tempMonthValue <= gapMonth) {
-      //       let dayLengthOfMonth = self.getDayNumOfCurrentMonth(self.date.endDate.year, self.date.startDate.month + tempMonthValue);
-      //       let gapDay = 0;
-      //       if (tempMonthValue == 0) {
-      //         gapDay = dayLengthOfMonth - self.date.startDate.day + 1;
-      //       } else if (tempMonthValue == gapMonth) {
-      //         gapDay = self.date.endDate.day;
-      //       } else {
-      //         gapDay = dayLengthOfMonth;
-      //       }
-      //       let dataMonth = `${self.date.endDate.year}-${self.date.startDate.month + tempMonthValue}`
-      //       console.log('dataMonth: ' + dataMonth);
-      //       console.log('gapDay: ' + gapDay);
-      //
-      //       for (let dataIdx = 0; dataIdx < data.length; dataIdx++) {
-      //         let dataItem = data[dataIdx]
-      //
-      //         if (dataItem.month == dataMonth) {
-      //           let budget = (gapDay / dayLengthOfMonth) * dataItem.amount;
-      //           summaryBudget += budget;
-      //         }
-      //       }
-      //
-      //       tempMonthValue++;
-      //     }
-      //   }
-      // } else {
-      //   //
-      // }
-
       self.summaryBudget = summaryBudget;
     });
   }
@@ -147,7 +97,7 @@ export default class GrammarModuleAddController {
 
       for (let dataIdx = 0; dataIdx < beData.length; dataIdx++) {
         let dataItem = beData[dataIdx];
-        console.log('date: ' + (year + '-' + (startMonth + monthIdx)))
+        // console.log('date: ' + (year + '-' + (startMonth + monthIdx)))
 
         if (dataItem.month == (year + '-' + (startMonth + monthIdx))) {
           summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
