@@ -84,8 +84,8 @@ export default class GrammarModuleAddController {
     var gapMonth = endMonth - startMonth;
 
     while (monthIdx <= gapMonth) {
-      let dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(currentYear, startMonth + monthIdx);
-      let gapDay = 0;
+      var dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(currentYear, startMonth + monthIdx);
+      var gapDay = 0;
       if (gapMonth == 0) {
         gapDay = endDay - startDay + 1;
       } else if (monthIdx == 0) {
@@ -96,15 +96,7 @@ export default class GrammarModuleAddController {
         gapDay = dayNumOfCurrentMonth;
       }
 
-      for (let dataIdx = 0; dataIdx < beData.length; dataIdx++) {
-        let dataItem = beData[dataIdx];
-        // console.log('date: ' + (currentYear + '-' + (startMonth + monthIdx)))
-
-        if (dataItem.month == (currentYear + '-' + (startMonth + monthIdx))) {
-          summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
-          break;
-        }
-      }
+      summaryBudget += self.getSumBudget(currentYear, startMonth + monthIdx, gapDay, dayNumOfCurrentMonth, beData);
 
       monthIdx++;
     }
@@ -112,8 +104,19 @@ export default class GrammarModuleAddController {
     return summaryBudget;
   }
 
-  isLeapYear(year) {
-    return ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+  getSumBudget(currentYear, currentMonth, gapDay, dayNumOfCurrentMonth, beData) {
+    var summaryBudget = 0;
+
+    for (var dataIdx = 0; dataIdx < beData.length; dataIdx++) {
+      var dataItem = beData[dataIdx];
+
+      if (dataItem.month == (currentYear + '-' + currentMonth)) {
+        summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
+        break;
+      }
+    }
+
+    return summaryBudget;
   }
 
   getDayNumOfCurrentMonth(yearValue, monthValue) {
@@ -131,7 +134,8 @@ export default class GrammarModuleAddController {
     } else if (cond2.indexOf(month) > -1) {
       monthLength = 30;
     } else {
-      if (year < 0 || self.isLeapYear(year)) {
+      if (year < 0 ||
+        self.isLeapYear(year)) {
         monthLength = 29;
       } else {
         monthLength = 28;
@@ -139,6 +143,10 @@ export default class GrammarModuleAddController {
     }
 
     return monthLength;
+  }
+
+  isLeapYear(year) {
+    return ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
   }
 
 }
