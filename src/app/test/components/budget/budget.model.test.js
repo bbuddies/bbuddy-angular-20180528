@@ -56,6 +56,14 @@ describe("budget model", function() {
       {
         month: "2018-03",
         amount: 3100
+      },
+      {
+        month: "2018-01",
+        amount: 3100
+      },
+      {
+        month: "2017-10",
+        amount: 3100
       }
     ]);
 
@@ -106,6 +114,22 @@ describe("budget model", function() {
       end: "2018-05-01"
     };
     getBudgetSuccessTestCase(getModel, 3200);
+  });
+
+  it("get budget successfully by period but has empty month", function() {
+    getModel = {
+      start: "2018-01-01",
+      end: "2018-03-31"
+    };
+    getBudgetSuccessTestCase(getModel, 6200);
+  });
+
+  it("get budget successfully by period across the year", function() {
+    getModel = {
+      start: "2017-01-01",
+      end: "2018-03-31"
+    };
+    getBudgetSuccessTestCase(getModel, 9300);
   });
 
   it("get budget failed due to empty", function() {

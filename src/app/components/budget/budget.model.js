@@ -73,8 +73,6 @@ export default class Budget {
         matchedMonth && (matchedMonth.amount = data.amount);
       });
 
-      console.log(monthsObj);
-
       // case for length 0
       if (monthsObj.length === 0) success(0);
       //  case for length 1
