@@ -44,7 +44,7 @@ describe("budget add controller", function() {
     var HH = current.getHours();
     var mm = current.getMinutes();
     var ss = current.getSeconds();
-    var SSS = current.getMilliseconds();
+    var SSS = parseInt(current.getMilliseconds());
     MM = fmt(MM);
     HH = fmt(HH);
     mm = fmt(mm);

@@ -1,9 +1,9 @@
 <div class="budget-get">
 
-  <h2 ng-if="$ctrl.sum">Sum: {{$ctrl.sum}}</h2>
+  <h2 ng-if="$ctrl.sum >= 0">Sum: {{$ctrl.sum}}</h2>
 
   <form class="form-horizontal"
-        ng-if="!$ctrl.sum"
+        ng-if="!($ctrl.sum >= 0)"
         role="form"
         method="post"
         ng-submit="$ctrl.get()">

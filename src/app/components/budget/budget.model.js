@@ -44,18 +44,16 @@ function calcSum(start, end, monthsObj) {
   const startDay = start.date();
   const endDay = end.date();
 
-  let sum;
-  // case for length 0
-  if (monthsObj.length === 0) sum = 0;
+  let sum = 0;
   //  case for length 1
-  else if (monthsObj.length === 1) {
+  if (monthsObj.length === 1) {
     const days = moment.duration(end.diff(start)).as("days") + 1;
     const totalDays = start.daysInMonth();
 
     sum = (days / totalDays) * monthsObj[0].amount;
   }
   // case for multi-monthes
-  else {
+  if (monthsObj.length > 1) {
     monthsObj[0].amount *= (start.daysInMonth() - startDay + 1) / start.daysInMonth();
     monthsObj[monthsObj.length - 1].amount *= endDay / end.daysInMonth();
 
