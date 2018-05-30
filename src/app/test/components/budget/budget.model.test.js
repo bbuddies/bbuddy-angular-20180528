@@ -10,6 +10,22 @@ describe("budget model", function() {
     failure.should.have.been.calledWith("Budget amount should not be empty , 0 or invalid!");
   };
 
+  var getBudgetSuccessTestCase = function(getModel, result) {
+    budget.get(getModel, success, failure);
+
+    all.should.have.been.called;
+
+    success.should.have.been.calledWith(result);
+  };
+
+  var getBudgetFailedTestCase = function(getModel, errMsg) {
+    budget.get(getModel, success, failure);
+
+    all.should.not.have.been.called;
+
+    failure.should.have.been.calledWith(errMsg);
+  };
+
   beforeEach(() => {
     budgetModel = {
       month: "2018-5",
@@ -81,12 +97,7 @@ describe("budget model", function() {
       start: "2018-05-15",
       end: "2018-05-15"
     };
-
-    budget.get(getModel, success, failure);
-
-    all.should.have.been.called;
-
-    success.should.have.been.calledWith(100);
+    getBudgetSuccessTestCase(getModel, 100);
   });
 
   it("get budget successfully by period", function() {
@@ -94,10 +105,7 @@ describe("budget model", function() {
       start: "2018-03-31",
       end: "2018-05-01"
     };
-
-    budget.get(getModel, success, failure);
-
-    success.should.have.been.calledWith(3200);
+    getBudgetSuccessTestCase(getModel, 3200);
   });
 
   it("get budget failed due to empty", function() {
@@ -105,12 +113,7 @@ describe("budget model", function() {
       start: "",
       end: "2018-05-15"
     };
-
-    budget.get(getModel, success, failure);
-
-    all.should.not.have.been.called;
-
-    failure.should.have.been.calledWith("Budget start or end date should not be empty!");
+    getBudgetFailedTestCase(getModel, "Budget start or end date should not be empty!");
   });
 
   it("get budget failed due to wrong sequency", function() {
@@ -118,11 +121,6 @@ describe("budget model", function() {
       start: "2018-05-28",
       end: "2018-05-15"
     };
-
-    budget.get(getModel, success, failure);
-
-    all.should.not.have.been.called;
-
-    failure.should.have.been.calledWith("Budget end date should not later than start date!");
+    getBudgetFailedTestCase(getModel, "Budget end date should not later than start date!");
   });
 });
