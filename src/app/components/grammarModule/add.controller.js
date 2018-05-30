@@ -79,44 +79,41 @@ export default class GrammarModuleAddController {
 
   calculate(currentYear, startMonth, endMonth, startDay, endDay, beData) {
     var self = this;
-    var summaryBudget = 0;
-    var monthIdx = 0;
     var gapMonth = endMonth - startMonth;
 
-    while (monthIdx <= gapMonth) {
+    var summaryBudget = 0;
+
+    for (var monthIdx = 0; monthIdx <= gapMonth; monthIdx++) {
       var dayNumOfCurrentMonth = self.getDayNumOfCurrentMonth(currentYear, startMonth + monthIdx);
-      var gapDay = 0;
-      if (gapMonth == 0) {
-        gapDay = endDay - startDay + 1;
-      } else if (monthIdx == 0) {
-        gapDay = dayNumOfCurrentMonth - startDay + 1;
-      } else if (monthIdx == gapMonth) {
-        gapDay = endDay;
-      } else {
-        gapDay = dayNumOfCurrentMonth;
-      }
-
-      summaryBudget += self.getSumBudget(currentYear, startMonth + monthIdx, gapDay, dayNumOfCurrentMonth, beData);
-
-      monthIdx++;
+      var gapDay = self.gapDay(gapMonth, endDay, startDay, monthIdx, dayNumOfCurrentMonth);
+      summaryBudget += self.getSumBudget(currentYear + '-' + startMonth + monthIdx, gapDay, dayNumOfCurrentMonth, beData);
     }
 
     return summaryBudget;
   }
 
-  getSumBudget(currentYear, currentMonth, gapDay, dayNumOfCurrentMonth, beData) {
-    var summaryBudget = 0;
+  gapDay(gapMonth, endDay, startDay, monthIdx, dayNumOfCurrentMonth) {
+    if (gapMonth == 0) {
+      return endDay - startDay + 1;
+    } else if (monthIdx == 0) {
+      return dayNumOfCurrentMonth - startDay + 1;
+    } else if (monthIdx == gapMonth) {
+      return endDay;
+    } else {
+      return dayNumOfCurrentMonth;
+    }
+  }
 
+  getSumBudget(currentYearMonth, gapDay, dayNumOfCurrentMonth, beData) {
     for (var dataIdx = 0; dataIdx < beData.length; dataIdx++) {
       var dataItem = beData[dataIdx];
 
-      if (dataItem.month == (currentYear + '-' + currentMonth)) {
-        summaryBudget += (gapDay / dayNumOfCurrentMonth) * dataItem.amount;
-        break;
+      if (dataItem.month === currentYearMonth) {
+        return dataItem.amount / dayNumOfCurrentMonth * gapDay;
       }
     }
 
-    return summaryBudget;
+    return 0;
   }
 
   getDayNumOfCurrentMonth(yearValue, monthValue) {
